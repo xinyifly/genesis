@@ -317,8 +317,6 @@ before packages are loaded. If you are unsure, you should try in setting them in
                                             :width normal
                                             :powerline-scale 1.1))
   (with-eval-after-load 'org
-    (add-to-list 'org-ctrl-c-ctrl-c-hook
-                 'ob-async-org-babel-execute-src-block)
     (setq org-confirm-babel-evaluate nil))
   )
 
