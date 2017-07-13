@@ -318,8 +318,6 @@ before packages are loaded. If you are unsure, you should try in setting them in
                                             :weight normal
                                             :width normal
                                             :powerline-scale 1.1))
-  (with-eval-after-load 'org
-    (setq org-confirm-babel-evaluate nil))
   )
 
 (defun dotspacemacs/user-config ()
@@ -329,6 +327,9 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (setq org-confirm-babel-evaluate nil)
+  (setq org-babel-default-header-args:shell
+        '((:prologue . "exec 2>&1") (:epilogue . ":")))
   (global-set-key (kbd "C->") 'mc/mark-next-like-this)
   (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
   )
