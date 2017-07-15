@@ -1,0 +1,7 @@
+* Xresources
+#+BEGIN_SRC conf :tangle ~/.Xresources
+Xft.dpi: 144
+XTerm.vt100.faceName: Noto Mono
+XTerm.vt100.faceNameDoublesize: Noto Sans Mono CJK SC
+XTerm.vt100.faceSize: 8
+#+END_SRC
