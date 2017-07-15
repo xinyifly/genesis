@@ -52,7 +52,11 @@ values."
           magit-diff-refine-hunk t)
      ;; markdown
      (org :variables
-          org-startup-indented t)
+          org-startup-indented t
+          org-confirm-babel-evaluate nil
+          org-src-preserve-indentation t
+          org-babel-default-header-args:shell
+          '((:prologue . "exec 2>&1") (:epilogue . ":")))
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
@@ -314,7 +318,7 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (setq-default dotspacemacs-default-font '("Source Code Pro"
-                                            :size 20
+                                            :size 22
                                             :weight normal
                                             :width normal
                                             :powerline-scale 1.1))
@@ -327,9 +331,9 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (setq org-confirm-babel-evaluate nil)
-  (setq org-babel-default-header-args:shell
-        '((:prologue . "exec 2>&1") (:epilogue . ":")))
+  (with-eval-after-load 'org
+    (ob-async-org-babel-execute-src-block)
+    )
   (global-set-key (kbd "C->") 'mc/mark-next-like-this)
   (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
   )
