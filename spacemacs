@@ -58,6 +58,7 @@ values."
           org-src-preserve-indentation t
           org-babel-default-header-args:shell
           '((:prologue . "exec 2>&1") (:epilogue . ":"))
+          org-pomodoro-keep-killed-pomodoro-time t
           org-publish-project-alist
           '(("xinyifly.github.io"
              :base-directory "/root/git/xinyifly/genesis/xinyifly.github.io"
