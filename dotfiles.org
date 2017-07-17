@@ -618,3 +618,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 	email = xinyifly@live.cn
 	name = Zeyu Chen
 #+END_SRC
+* Sudo
+#+BEGIN_SRC conf :tangle /etc/sudoers.d/nobody
+nobody ALL=(ALL) NOPASSWD: ALL
+#+END_SRC
