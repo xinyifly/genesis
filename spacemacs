@@ -32,7 +32,11 @@ values."
    dotspacemacs-configuration-layers
    '(
      django
-     react
+     (react :variables
+            web-mode-markup-indent-offset 2
+            web-mode-css-indent-offset 2
+            web-mode-code-indent-offset 2
+            web-mode-attr-indent-offset 2)
      common-lisp
      restclient
      yaml
@@ -40,6 +44,9 @@ values."
      lua
      sql
      php
+     (javascript :variables
+                 js-indent-level 2
+                 js2-strict-missing-semi-warning nil)
      html
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
@@ -343,6 +350,10 @@ you should place your code here."
   (with-eval-after-load 'org
     (ob-async-org-babel-execute-src-block)
     )
+  (with-eval-after-load 'web-mode
+    (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
+    (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
+    (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
   (global-set-key (kbd "C->") 'mc/mark-next-like-this)
   (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
   )
