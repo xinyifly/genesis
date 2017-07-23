@@ -623,3 +623,11 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 #+BEGIN_SRC conf :tangle /etc/sudoers.d/nobody
 nobody ALL=(ALL) NOPASSWD: ALL
 #+END_SRC
+
+* chnroute
+#+BEGIN_SRC shell :async :results scalar
+wget -O- 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | \
+    awk -F\| '/CN\|ipv4/ { printf("%s/%d\n", $4, 32-log($5)/log(2)) }' > \
+        /tmp/chnroute.txt
+mv /tmp/chnroute.txt /opt/shadowsocks-auto-redir/routes/chnroute.txt
+#+END_SRC
