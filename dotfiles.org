@@ -631,3 +631,8 @@ wget -O- 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | \
         /tmp/chnroute.txt
 mv /tmp/chnroute.txt /opt/shadowsocks-auto-redir/routes/chnroute.txt
 #+END_SRC
+
+* Brightness
+#+BEGIN_SRC shell
+echo 50 > /sys/class/backlight/acpi_video0/brightness
+#+END_SRC
