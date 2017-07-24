@@ -349,6 +349,12 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (with-eval-after-load 'org
     (ob-async-org-babel-execute-src-block)
+    (org-babel-do-load-languages
+     'org-babel-load-languages
+     (append
+      '((sql . t))
+      org-babel-load-languages
+      ))
     )
   (with-eval-after-load 'web-mode
     (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
