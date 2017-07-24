@@ -1,5 +1,5 @@
 * Xorg
-#+BEGIN_SRC sh :tangle ~/.xinitrc
+#+BEGIN_SRC sh :tangle /duck/root/.xinitrc
 #!/bin/sh
 
 userresources=$HOME/.Xresources
@@ -42,7 +42,7 @@ scim -d
 exec awesome
 #+END_SRC
 
-#+BEGIN_SRC conf :tangle ~/.Xresources
+#+BEGIN_SRC conf :tangle /duck/root/.Xresources
 Xft.dpi: 144
 XTerm.vt100.faceName: Noto Mono
 XTerm.vt100.faceNameDoublesize: Noto Sans Mono CJK SC
@@ -50,7 +50,7 @@ XTerm.vt100.faceSize: 8
 #+END_SRC
 
 * Awesome
-#+BEGIN_SRC lua :tangle ~/.config/awesome/rc.lua
+#+BEGIN_SRC lua :tangle /duck/root/.config/awesome/rc.lua :mkdirp yes
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -614,13 +614,13 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 #+END_SRC
 
 * Git
-#+BEGIN_SRC conf :tangle ~/.gitconfig
+#+BEGIN_SRC conf :tangle /duck/root/.gitconfig
 [user]
 	email = xinyifly@live.cn
 	name = Zeyu Chen
 #+END_SRC
 * Sudo
-#+BEGIN_SRC conf :tangle /etc/sudoers.d/nobody
+#+BEGIN_SRC conf :tangle /duck/etc/sudoers.d/nobody :mkdirp yes
 nobody ALL=(ALL) NOPASSWD: ALL
 #+END_SRC
 
