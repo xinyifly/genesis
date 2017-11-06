@@ -1,0 +1,97 @@
+* 编码规范
+- 遵守公认的标准，例如 psr-2, standardjs, pep-8
+- 阅读过＜编写可读代码的艺术＞，变量名、函数名尽可能准确、达意
+- 会使用函数将大的过程拆分成清晰的步骤
+- 在理解项目的基础上乐于重构
+- 熟悉 Restful 编程理念，用对 URL, HTTP 动词和状态码，了解超媒体的理念。
+- 理解关系、配合 ER 图设计数据库表
+- 了解 immutable 的编程理念
+
+* 编程语言
+
+** PHP
+- 熟读过 ThinkPHP 的文档，了解 MVC 结构和基于关系的 ORM
+- 维护过公司 Zend Framework 1 的项目
+- 学习过 Laravel，用过内置的 OAuth2，了解一系列 package
+- 多次对接过微信支付接口、第三方银联支付网关、实名认证系统
+- 会用抽象函数和接口
+
+** JS
+- 熟悉 npm install，以及 npm publish 项目，了解一系列 package
+- 用过 Angular1-Ionic
+- 用过 React-Redux-MaterialUI
+
+** 其他及 DSL
+- 熟悉 SQL 语句及 MySQL 指令, redis-cli
+- 如 Nginx 或 Apache 的各种 Linux 配置文件都会改
+- 在学习 ANSI Common Lisp
+
+* 编程工具
+
+** Emacs
+- 平时用 spacemacs, 用过 purcell 的配置
+- 日常使用 org-mode 做笔记，直接执行 src_block 的代码，提交 org 格式的文档
+- 熟练使用 magit
+- 使用 tangle 管理 dotfiles，会用 .org.gpg 管理带 key 的 dotfiles
+- 会用 geben 断点调试 PHP 代码
+
+** Vim
+以下操作均无须参考文档
+- 基本光标跳转，例如跳转到屏幕顶部、当前行置中
+- 基本变量设定，例如语法高亮、 4 空格缩进
+- 分屏、分标签编辑文件
+- 简单正则文本搜索、替换
+- 会用 DBGP 断点调试 PHP 代码
+
+** Git
+- 熟悉先锋分支和先锋主干两种开发模式、了解特性开关的使用，推崇 Google 源代码管理
+- 熟悉语义化版本，使用 Tag 发布，熟悉 hotfix 流程
+- 熟悉 fetch, rebase, merge 工作流
+- 误操作后会用 reflog 弥补，理解分支名只是某个提交 id 的标签
+- Commit message 使用 Angular 规范，了解生成 Changelog 的工具
+
+** Docker
+- 职责分离地写出 Dockerfile
+- 熟悉基本 docker 指令，例如 run, exec, stats
+- 熟悉 docker-compose
+
+** Linux
+- 日常使用 ArchLinux，熟练查询 ArchWiki 解决问题
+- 在 docker 镜像没达到要求的时候，熟悉 Linux 文件结构以改造镜像
+- 熟悉用户权限概念及指令
+- 熟悉常用诊断指令，如 netstat/nload, top/w, free, iotop
+- 熟悉网络概念，会用 ip, route 指令，熟悉 route, subnet, netmask, gateway, cidr
+
+** Shadowsocks
+- 熟悉 OpenWRT, LEDE 路由器透明翻墙
+- 平时用开源库通过 iptables, ss-redir 透明翻墙
+- 会搭 Shadowsocks, kcptun
+
+* 第三方服务
+没信用卡一直想用 GCP, k8s 用不了
+
+** AWS 全家桶
+- 熟悉 EC2 系列包含 VPC, LB, SSM
+- 熟悉 S3, IAM, CloudWatch
+- 了解 CloudFormation 声明式管理资源，配置不友好，计划用 Terraform 取代
+
+** github
+- 通过 issue 记录日常工作任务，方便共享调查结果，以及指派人员继续任务
+- 参考项目 star 数量指导学习方向
+- 替项目作者提 issue
+- 倾向使用与 github 集成的周边工具
+
+** 其他
+- 使用 dockerhub 自动构建容器
+- 使用 lastpass 记密码， Google 双重验证
+
+* 学习重心
+- Terraform, Consul
+- SRE
+- GraphQL
+
+* 业余爱好
+
+** 魔方
+- 平均30秒内还原魔方
+- 大于 50% 概率能在 20 分钟内记忆并盲拧成功
