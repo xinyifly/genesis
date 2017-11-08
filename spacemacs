@@ -390,7 +390,8 @@ before packages are loaded."
     (org-babel-do-load-languages
      'org-babel-load-languages
      (append
-      '((sql . t))
+      '((js . t)
+        (sql . t))
       org-babel-load-languages
       ))
     )
