@@ -30,6 +30,7 @@ This function should only modify configuration layer settings."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     markdown
      django
      (react :variables
             web-mode-markup-indent-offset 2
