@@ -400,6 +400,8 @@ before packages are loaded."
     (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
   (global-set-key (kbd "C->") 'mc/mark-next-like-this)
   (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+  (global-set-key (kbd "C-M->") 'mc/mark-next-like-this-word)
+  (global-set-key (kbd "C-M-<") 'mc/mark-previous-like-this-word)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
