@@ -88,6 +88,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-additional-packages
    '(
      ob-async
+     aws-ec2
      )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
