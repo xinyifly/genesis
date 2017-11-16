@@ -47,6 +47,7 @@ This function should only modify configuration layer settings."
      php
      (javascript :variables
                  js-indent-level 2
+                 js-switch-indent-offset 2
                  js2-strict-missing-semi-warning nil)
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
