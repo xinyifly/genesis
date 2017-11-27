@@ -48,7 +48,8 @@ This function should only modify configuration layer settings."
      (javascript :variables
                  js-indent-level 2
                  js-switch-indent-offset 2
-                 js2-strict-missing-semi-warning nil)
+                 js2-strict-missing-semi-warning nil
+                 js2-strict-inconsistent-return-warning nil)
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
