@@ -412,7 +412,7 @@ before packages are loaded."
   (require 'exwm)
 
   (require 'exwm-randr)
-  (setq exwm-randr-workspace-output-plist '(1 "DP-1"))
+  (setq exwm-randr-workspace-output-plist '(1 "DP-1" 2 "DP-1"))
   (exwm-randr-enable)
 
   (require 'exwm-config)
