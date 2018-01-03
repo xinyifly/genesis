@@ -1,8 +1,6 @@
-* Xorg
-:PROPERTIES:
-:header-args: :mkdirp yes
-:END:
+#+PROPERTY: header-args :mkdirp yes
 
+* Xorg
 #+BEGIN_SRC sh :tangle /duck/root/.xinitrc
 #!/bin/sh
 
