@@ -1,7 +1,9 @@
+# -*- host: ""; -*-
+
 #+PROPERTY: header-args :mkdirp yes
 
 * Xorg
-#+BEGIN_SRC sh :tangle /duck/root/.xinitrc
+#+BEGIN_SRC sh :tangle (concat host "/root/.xinitrc") 
 #!/bin/sh
 
 userresources=$HOME/.Xresources
@@ -44,14 +46,14 @@ scim -d
 exec ssh-agent emacs
 #+END_SRC
 
-#+BEGIN_SRC conf :tangle /duck/root/.Xresources
+#+BEGIN_SRC conf :tangle (concat host "/root/.Xresources")
 Xft.dpi: 144
 XTerm.vt100.faceName: Noto Mono
 XTerm.vt100.faceNameDoublesize: Noto Sans Mono CJK SC
 XTerm.vt100.faceSize: 8
 #+END_SRC
 
-#+BEGIN_SRC xml :tangle /duck/root/.config/fontconfig/fonts.conf
+#+BEGIN_SRC xml :tangle (concat host "/root/.config/fontconfig/fonts.conf")
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
@@ -77,19 +79,19 @@ XTerm.vt100.faceSize: 8
 #+END_SRC
 
 * Git
-#+BEGIN_SRC conf :tangle /duck/root/.gitconfig
+#+BEGIN_SRC conf :tangle (concat host "/root/.gitconfig")
 [user]
 	email = xinyifly@live.cn
 	name = Zeyu Chen
 #+END_SRC
 
 * Sudo
-#+BEGIN_SRC conf :tangle /duck/etc/sudoers.d/nobody :mkdirp yes
+#+BEGIN_SRC conf :tangle (concat host "/etc/sudoers.d/nobody :mkdirp yes")
 nobody ALL=(ALL) NOPASSWD: ALL
 #+END_SRC
 
 * Aws
-#+BEGIN_SRC conf :tangle /duck/root/.aws/config
+#+BEGIN_SRC conf :tangle (concat host "/root/.aws/config")
 [default]
 region = ap-northeast-1
 [preview]
@@ -110,7 +112,7 @@ echo 50 > /sys/class/backlight/acpi_video0/brightness
 #+END_SRC
 
 * bashrc
-#+BEGIN_SRC bash :tangle /duck/root/.bashrc
+#+BEGIN_SRC bash :tangle (concat host "/root/.bashrc")
 #
 # ~/.bashrc
 #
@@ -123,3 +125,4 @@ PS1='[\u@\h \W]\$ '
 
 [ -d /root/.gem/ruby/2.4.0/bin ] && PATH=$PATH:/root/.gem/ruby/2.4.0/bin
 #+END_SRC
+
