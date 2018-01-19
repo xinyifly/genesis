@@ -12,6 +12,14 @@ resource "alicloud_security_group_rule" "blizzard-ssh-in" {
   cidr_ip = "0.0.0.0/0"
 }
 
+resource "alicloud_security_group_rule" "blizzard-vpn-in" {
+  type = "ingress"
+  ip_protocol = "udp"
+  port_range = "1194/1194"
+  security_group_id = "${alicloud_security_group.blizzard.id}"
+  cidr_ip = "0.0.0.0/0"
+}
+
 resource "alicloud_instance" "blizzard" {
   image_id = "ubuntu_16_0402_64_20G_alibase_20170818.vhd"
   instance_type = "ecs.xn4.small"
