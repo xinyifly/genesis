@@ -29,27 +29,12 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(ruby
-     terraform
+   '(local
      markdown
-     django
-     (react :variables
-            web-mode-markup-indent-offset 2
-            web-mode-css-indent-offset 2
-            web-mode-code-indent-offset 2
-            web-mode-attr-indent-offset 2)
      common-lisp
      restclient
      yaml
-     docker
      lua
-     sql
-     php
-     (javascript :variables
-                 js-indent-level 2
-                 js-switch-indent-offset 2
-                 js2-strict-missing-semi-warning nil
-                 js2-strict-inconsistent-return-warning nil)
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
@@ -59,27 +44,8 @@ This function should only modify configuration layer settings."
      ;; auto-completion
      ;; better-defaults
      emacs-lisp
-     (git :variables
-          magit-diff-refine-hunk t)
      ;; markdown
      neotree
-     (org :variables
-          org-startup-indented t
-          org-confirm-babel-evaluate nil
-          org-src-preserve-indentation t
-          org-babel-default-header-args:shell
-          '((:prologue . "exec 2>&1") (:epilogue . ":"))
-          org-pomodoro-keep-killed-pomodoro-time t
-          org-publish-project-alist
-          '(("xinyifly.github.io"
-             :base-directory "/root/git/xinyifly/genesis/xinyifly.github.io"
-             :publishing-function org-html-publish-to-html
-             :publishing-directory "/root/git/xinyifly/xinyifly.github.io"
-             :auto-sitemap t
-             :html-postamble nil)))
-     (shell :variables
-            shell-default-height 30
-            shell-default-position 'bottom)
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
