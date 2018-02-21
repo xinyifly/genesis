@@ -90,14 +90,6 @@ XTerm.vt100.faceSize: 8
 nobody ALL=(ALL) NOPASSWD: ALL
 #+END_SRC
 
-* Aws
-#+BEGIN_SRC conf :tangle (concat host "/root/.aws/config")
-[default]
-region = ap-northeast-1
-[preview]
-cloudfront = true
-#+END_SRC
-
 * chnroute
 #+BEGIN_SRC shell :async :results scalar
 wget -O- 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | \
