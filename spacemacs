@@ -372,6 +372,8 @@ before packages are loaded."
   (global-set-key (kbd "C-M->") 'mc/mark-next-like-this-word)
   (global-set-key (kbd "C-M-<") 'mc/mark-previous-like-this-word)
 
+  (global-set-key (kbd "s-SPC o r") 'rename-buffer)
+
   (setq org-agenda-files '("~/Dropbox/Org"))
   (setq org-todo-keywords
         '((sequence "TODO(t)" "|" "DONE(d)" "CANCELLED(c)")))
