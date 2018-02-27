@@ -356,6 +356,7 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+  (spacemacs/toggle-display-time-on)
   (with-eval-after-load 'org
     (ob-async-org-babel-execute-src-block)
     (org-babel-do-load-languages
