@@ -138,7 +138,7 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Noto Mono"
+   dotspacemacs-default-font '("Noto Sans Mono"
                                :size 22
                                :weight normal
                                :width normal
@@ -373,6 +373,8 @@ before packages are loaded."
   (global-set-key (kbd "C-M-<") 'mc/mark-previous-like-this-word)
 
   (global-set-key (kbd "s-SPC o r") 'rename-buffer)
+  (global-set-key (kbd "s-j") 'evil-avy-goto-char-timer)
+  (global-set-key (kbd "s-l") 'evil-avy-goto-line)
 
   (setq org-agenda-files '("~/Dropbox/Org"))
   (setq org-todo-keywords
