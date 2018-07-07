@@ -58,7 +58,6 @@ This function should only modify configuration layer settings."
    '(
      ob-async
      aws-ec2
-     exwm
      )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -379,17 +378,4 @@ before packages are loaded."
   (setq org-agenda-files '("~/Dropbox/Org"))
   (setq org-todo-keywords
         '((sequence "TODO(t)" "|" "DONE(d)" "CANCELLED(c)")))
-
-  (require 'exwm)
-
-  (require 'exwm-randr)
-  (setq exwm-randr-workspace-output-plist '(1 "DP-1"))
-  (exwm-randr-enable)
-
-  (require 'exwm-config)
-  (exwm-config-default)
-
-  (setq exwm-workspace-number 2)
-
-  (push ?\s-\  exwm-input-prefix-keys)
   )

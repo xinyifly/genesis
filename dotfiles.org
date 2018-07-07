@@ -43,7 +43,7 @@ export GTK_IM_MODULE="scim"
 export QT_IM_MODULE="scim"
 scim -d
 
-exec ssh-agent emacs
+exec ssh-agent awesome
 #+END_SRC
 
 #+BEGIN_SRC conf :tangle (concat host "/root/.Xresources")
