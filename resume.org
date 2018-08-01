@@ -19,7 +19,8 @@
 ** JS
 - 熟悉 npm install，以及 npm publish 项目，了解一系列 package
 - 用过 Angular1-Ionic
-- 用过 React-Redux-MaterialUI
+- 用过 React-Redux-MaterialUI, react-admin
+- 用过 apollo-client, apollo-server
 
 ** 其他及 DSL
 - 熟悉 SQL 语句及 MySQL 指令, redis-cli
@@ -54,6 +55,7 @@
 - 职责分离地写出 Dockerfile
 - 熟悉基本 docker 指令，例如 run, exec, stats
 - 熟悉 docker-compose
+- 用过 kubernetes
 
 ** Linux
 - 日常使用 ArchLinux，熟练查询 ArchWiki 解决问题
@@ -68,12 +70,11 @@
 - 会搭 Shadowsocks, kcptun
 
 * 第三方服务
-没信用卡一直想用 GCP, k8s 用不了
 
 ** AWS 全家桶
 - 熟悉 EC2 系列包含 VPC, LB, SSM
 - 熟悉 S3, IAM, CloudWatch
-- 了解 CloudFormation 声明式管理资源，配置不友好，计划用 Terraform 取代
+- 了解 CloudFormation 声明式管理资源
 
 ** github
 - 通过 issue 记录日常工作任务，方便共享调查结果，以及指派人员继续任务
@@ -82,8 +83,9 @@
 - 倾向使用与 github 集成的周边工具
 
 ** 其他
+- 熟悉 Terraform
 - 使用 dockerhub 自动构建容器
-- 使用 lastpass 记密码， Google 双重验证
+- 使用 pass 记密码， Google 双重验证
 
 * 学习重心
 - Terraform, Consul
